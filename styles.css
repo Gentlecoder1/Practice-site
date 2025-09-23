@@ -1,0 +1,588 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.header {
+  display: flex;
+  padding: 2% 0%;
+  gap: 25rem;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+
+.header img {
+  width: 11rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  text-align: right;
+  width: 25rem;
+  list-style: none;
+}
+
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.nav li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: orangered;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav li:hover::after {
+  width: 100%;
+}
+
+.dropdown {
+  display: none;
+}
+.dropdown div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: white;
+}
+.textletter {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-box {
+  display: block;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+}
+.text-box h1 {
+  font-size: 65px;
+}
+.text-box p {
+  font-size: 16px;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.text-box .btn {
+  font-size: 15px;
+  border: 3px solid white;
+  list-style: none;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 1s;
+}
+.text-box .btn:hover {
+  background-color: blue;
+  border: 3px solid blue;
+  transition: 1s;
+}
+
+.course {
+  text-align: center;
+  color: #000000;
+  margin: auto;
+  padding: 30px;
+  max-width: 1100px;
+}
+.course h1 {
+  font-size: 40px;
+}
+.course p {
+  font-size: 17px;
+  opacity: 0.6;
+  margin-top: 1rem;
+}
+.programs {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 45px;
+  margin-bottom: 3rem;
+}
+#under {
+  flex-basis: 31%;
+  background-color: #fff3f3;
+  border-radius: 15px;
+  transition: box-shadow 0.5s all;
+  padding: 25px 15px;
+}
+
+#under h1 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+#under p {
+  font-size: 17px;
+  opacity: 0.6;
+  font-weight: lighter;
+}
+
+.programs #under:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.global {
+  text-align: center;
+  color: #000000;
+  margin: auto;
+  padding: 30px;
+  max-width: 1100px;
+}
+.global h1 {
+  font-size: 40px;
+}
+.global p {
+  font-size: 17px;
+  opacity: 0.6;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.citypic {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 5rem;
+}
+.b1 {
+  flex-basis: 32%;
+  border-radius: 15px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.b1 img {
+  width: 100%;
+}
+.london {
+  background: transparent;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.london:hover {
+  background: rgba(226, 0, 0, 0.7);
+}
+.london h1 {
+  width: 100%;
+  font-size: 20px;
+  color: transparent;
+  bottom: 0px;
+  left: 50px;
+  transform: translateX(-50px);
+  position: absolute;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.london:hover h1 {
+  opacity: 1;
+  bottom: 49%;
+  color: black;
+}
+.facilities {
+  text-align: center;
+  color: #000000;
+  margin: auto;
+  max-width: 1100px;
+  padding: 30px;
+}
+.font {
+  font-size: 40px;
+}
+.facilities p {
+  font-size: 17px;
+  opacity: 0.6;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.people {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 2rem;
+}
+.b4 hl {
+  font-size: 15px;
+}
+
+.b4 p {
+  display: flex;
+  opacity: 0.6;
+  text-align: left;
+}
+
+.b4 img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.student {
+  max-width: 1100px;
+  text-align: center;
+  color: #000000;
+  margin: auto;
+  padding: 30px;
+}
+.student h1 {
+  font-size: 30px;
+}
+
+.student p {
+  font-size: 17px;
+  opacity: 0.6;
+  margin-top: 1rem;
+}
+
+.view {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.comment {
+  background-color: #fce0e0;
+  border-radius: 15px;
+  padding: 2% 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+  text-align: left;
+  width: 500px;
+}
+.comment h1 {
+  font-size: 20px;
+}
+#pp {
+  margin-top: 20px;
+  width: 3rem;
+  border-radius: 100%;
+}
+.run {
+  width: 100%;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/banner2.jpg);
+  position: relative;
+  margin-bottom: 5em;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.runtext {
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 10rem;
+}
+
+.runtext h1 {
+  font-size: 45px;
+  padding-bottom: 4rem;
+}
+.runtext h2 {
+  font-size: 40px;
+  padding-bottom: 3rem;
+}
+.runtext .btn {
+  font-size: 15px;
+  border: 3px solid white;
+  list-style: none;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 1s;
+}
+.runtext .btn:hover {
+  background-color: blue;
+  border: 3px solid blue;
+  transition: 1s;
+}
+
+.about {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #000000;
+  margin: auto;
+  padding: 25px;
+  max-width: 1100px;
+}
+
+.aboutus h1 {
+  margin-bottom: 2rem;
+}
+
+.aboutus p {
+  margin-bottom: 2rem;
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+.aboutus a {
+  text-decoration: none;
+  color: blue;
+  font-size: large;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 2% 0%;
+    width: 100%;
+    gap: 47px;
+    justify-content: space-around;
+  }
+  .text-box {
+    padding: 2rem;
+  }
+  .text-box h1 {
+    line-height: 70px;
+    margin-bottom: -3rem;
+    font-size: 40px;
+  }
+  .course h1 {
+    font-size: 34px;
+  }
+  .course p {
+    font-size: 14px;
+  }
+  .programs {
+    gap: 30px;
+    margin-bottom: 2rem;
+  }
+  #under h1 {
+    font-size: 22px;
+  }
+  #under p {
+    font-size: 14px;
+  }
+  .global h1 {
+    font-size: 34px;
+  }
+  .global p {
+    font-size: 14px;
+  }
+  .citypic {
+    margin-bottom: 2rem;
+  }
+  .london h1 {
+    font-size: 15px;
+  }
+
+  .font {
+    font-size: 34px;
+  }
+  .facilities p {
+    font-size: 14px;
+  }
+  .b4 hl {
+    font-size: 14px;
+  }
+  .b4 p {
+    font-size: 13px;
+  }
+  .people {
+    margin-bottom: 1rem;
+  }
+  .student h1 {
+    font-size: 30px;
+  }
+  .student p {
+    font-size: 14px;
+  }
+  .comment {
+    gap: 25px;
+  }
+  .comment h1 {
+    font-size: 15px;
+  }
+  #pp {
+    margin-top: 18px;
+    width: 2.5rem;
+    border-radius: 100%;
+  }
+  .about {
+    margin-top: 4rem;
+  }
+
+  .aboutus h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .aboutus p {
+    margin-bottom: 1rem;
+    font-size: 14px;
+  }
+  .run {
+    margin-bottom: 4em;
+  }
+  .runtext {
+    padding: 100px 12px;
+  }
+
+  .runtext h1 {
+    font-size: 34px;
+    padding-bottom: 3rem;
+  }
+  .runtext h2 {
+    font-size: 30px;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    overflow: hidden;
+    margin-bottom: 0.7rem;
+  }
+  .dropdown {
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .nav {
+    position: absolute;
+    background: rgb(65, 85, 150);
+    width: 50%;
+    top: 0;
+    height: 100%;
+    right: 0;
+    transition: 0.5s;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+  .nav li {
+    margin: 3.5rem;
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .text-box {
+    margin: 8.5rem 1rem;
+    position: absolute;
+  }
+  .text-box h1 {
+    margin-top: -50px;
+    font-size: 45px;
+    margin-bottom: 1px;
+    line-height: 50px;
+  }
+  .text-box p {
+    font-size: 13px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .course {
+    margin: auto;
+    width: 350px;
+    margin-bottom: 2rem;
+  }
+  .course h1 {
+    font-size: 30px;
+  }
+  .course p {
+    font-size: 13px;
+    margin-bottom: 3rem;
+  }
+  .programs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 350px;
+  }
+  .under h1 {
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
+
+  .global {
+    text-align: center;
+    margin: auto;
+    width: 400px;
+  }
+  .global h1 {
+    font-size: 30px;
+  }
+  .global p {
+    font-size: 13px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  .citypic {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    width: 350px;
+    margin: auto;
+  }
+  .facilities {
+    margin: auto;
+    width: 400px;
+  }
+  .font {
+    font-size: 30px;
+  }
+  .facilities p {
+    font-size: 13px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  .people {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+}

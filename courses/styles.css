@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+.header {
+  width: 100%;
+  max-height: 100vh;
+  min-height: 40vh;
+  padding-bottom: 100px;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/certificate.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 5rem;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  padding-top: 20px;
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: block;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: orangered;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.xtra {
+  margin: 10px;
+}
+nav .fa {
+  display: none;
+}
+
+.textletter {
+  margin-top: -1rem;
+  height: 28%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box {
+  padding-top: 20px;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+}
+.text-box h1 {
+  font-size: 45px;
+  padding-top: 4rem;
+}
+
+.course {
+  text-align: center;
+  color: #000000;
+  margin: auto;
+  padding: 30px;
+  max-width: 1100px;
+}
+.course h1 {
+  font-size: 40px;
+}
+.course p {
+  font-size: 17px;
+  opacity: 0.6;
+  margin-top: 1rem;
+}
+.programs {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 45px;
+  margin-bottom: 3rem;
+}
+#under {
+  flex-basis: 31%;
+  background-color: #fff3f3;
+  border-radius: 15px;
+  transition: box-shadow 0.5s all;
+  padding: 25px 15px;
+}
+
+#under h1 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+#under p {
+  font-size: 17px;
+  opacity: 0.6;
+  font-weight: lighter;
+}
+
+.programs #under:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.facilities {
+  text-align: center;
+  color: #000000;
+  margin: auto;
+  max-width: 1100px;
+  padding: 30px;
+}
+.font {
+  font-size: 40px;
+}
+.facilities p {
+  font-size: 17px;
+  opacity: 0.6;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.people {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 2rem;
+}
+.b4 hl {
+  font-size: 15px;
+}
+
+.b4 p {
+  display: flex;
+  opacity: 0.6;
+  text-align: left;
+}
+
+.b4 img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.about {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #000000;
+  margin: auto;
+  padding: 25px;
+  max-width: 1100px;
+}
+
+.aboutus h1 {
+  margin-bottom: 2rem;
+}
+
+.aboutus p {
+  margin-bottom: 2rem;
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+.aboutus a {
+  text-decoration: none;
+  color: blue;
+  font-size: large;
+}
+
+@media (max-width: 1200px) {
+  .text-box {
+    padding: 2rem;
+  }
+  .text-box h1 {
+    line-height: 85px;
+    margin-bottom: -3rem;
+    font-size: 50px;
+  }
+  .course h1 {
+    font-size: 34px;
+  }
+  .course p {
+    font-size: 14px;
+  }
+  .programs {
+    gap: 30px;
+    margin-bottom: 2rem;
+  }
+  #under h1 {
+    font-size: 22px;
+  }
+  #under p {
+    font-size: 14px;
+  }
+  .font {
+    font-size: 34px;
+  }
+  .facilities p {
+    font-size: 14px;
+  }
+  .b4 hl {
+    font-size: 14px;
+  }
+  .b4 p {
+    font-size: 13px;
+  }
+  .people {
+    margin-bottom: 1rem;
+  }
+  .about {
+    margin-top: 4rem;
+  }
+
+  .aboutus h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .aboutus p {
+    margin-bottom: 1rem;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    margin-bottom: 3rem;
+  }
+  nav .fa {
+    display: contents;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links ul li {
+    padding: 15px;
+  }
+  .nav-links {
+    position: absolute;
+    background: orangered;
+    height: 150vh;
+    width: 350px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+    position: fixed;
+    z-index: 2;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+
+  .text-box {
+    margin: 3rem;
+  }
+  .text-box h1 {
+    font-size: 45px;
+    margin-bottom: 1px;
+    line-height: 50px;
+  }
+
+  .course {
+    margin: auto;
+    width: 350px;
+    margin-bottom: 2rem;
+  }
+  .course h1 {
+    font-size: 30px;
+  }
+  .course p {
+    font-size: 13px;
+    margin-bottom: 3rem;
+  }
+  .programs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 350px;
+  }
+  .under h1 {
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
+  .facilities {
+    margin: auto;
+    width: 400px;
+  }
+  .font {
+    font-size: 30px;
+  }
+  .facilities p {
+    font-size: 13px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  .people {
+    display: flex;
+    flex-direction: column;
+  }
+  .about {
+    margin-top: 1px;
+  }
+}

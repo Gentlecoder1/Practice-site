@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+.header {
+  width: 100%;
+  max-height: 100vh;
+  min-height: 40vh;
+  padding-bottom: 100px;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/certificate.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 2rem;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  padding-top: 20px;
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: block;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.fa {
+  display: none;
+}
+.xtra {
+  margin: 10px;
+}
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: orangered;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.textletter {
+  margin-top: -1rem;
+  height: 28%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box {
+  padding-top: 20px;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+}
+.text-box h1 {
+  font-size: 45px;
+  padding-top: 4rem;
+}
+
+#info {
+  text-align: center;
+  color: #000000;
+  margin: auto;
+  max-width: 1100px;
+  margin-top: 6rem;
+}
+.love {
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+}
+.pic img {
+  width: 100%;
+}
+
+.infos {
+  text-align: left;
+  line-height: 30px;
+  width: 100%;
+}
+
+.infos h1 {
+  margin: 2.3rem 0;
+  font-size: 25px;
+}
+.infos p {
+  font-size: 15px;
+  opacity: 0.6;
+  margin-top: 1rem;
+}
+.form {
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+  border: 1px solid rgb(231, 231, 231);
+  padding: 25px 22px;
+}
+.formfill {
+  width: 100%;
+  margin: 10px 0;
+  padding: 13px;
+  font-size: 14px;
+  background-color: rgb(231, 231, 231);
+  border: none;
+}
+#formfill {
+  width: 100%;
+  margin: 10px 0;
+  padding: 13px;
+  font-size: 14px;
+  background-color: rgb(231, 231, 231);
+  border: none;
+  height: 150px;
+}
+
+.form h1 {
+  font-size: 18px;
+  padding-left: 25px;
+}
+
+.btn {
+  margin-top: 10px;
+  font-size: 14px;
+  border: 3.5px solid rgb(78, 81, 173);
+  list-style: none;
+  padding: 15px 50px;
+  text-decoration: none;
+  color: rgb(78, 81, 173);
+  cursor: pointer;
+  background-color: transparent;
+  transition: 1s;
+  align-items: left;
+}
+.btn:hover {
+  color: white;
+  background-color: rgb(78, 81, 173);
+  border: 3.5px solid rgb(78, 81, 173);
+  transition: 1s;
+}
+.categories {
+  width: 210%;
+}
+.post {
+  background-color: rgb(230, 39, 39);
+  width: 100%;
+  margin-bottom: 2rem;
+  color: white;
+  font-size: 13px;
+  padding: 15px 0;
+}
+.postcat {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem 1.5rem 1rem;
+  font-size: 17px;
+  opacity: 0.6;
+}
+
+.about {
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #000000;
+  margin: auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.aboutus h1 {
+  margin-bottom: 2rem;
+}
+
+.aboutus p {
+  margin-bottom: 2rem;
+  font-size: 17px;
+  opacity: 0.6;
+}
+
+.aboutus a {
+  text-decoration: none;
+  color: blue;
+  font-size: large;
+}
+
+@media (max-width: 1200px) {
+  .text-box {
+    padding: 2rem;
+  }
+  .text-box h1 {
+    line-height: 55px;
+    margin-bottom: -3rem;
+    font-size: 35px;
+  }
+  #info {
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+  .love {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+  }
+  .info {
+    width: 1100px;
+  }
+
+  .infos h1 {
+    margin: 1.7rem 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .infos p {
+    font-size: 13px;
+    opacity: 0.6;
+    margin-top: 1rem;
+    line-height: 20px;
+  }
+  .form {
+    text-align: left;
+    margin-top: 2rem;
+    border: 1px solid rgb(231, 231, 231);
+    padding: 25px 22px;
+  }
+  .formfill {
+    width: 100%;
+    margin: 10px 0;
+    padding: 13px;
+    font-size: 12px;
+    background-color: rgb(231, 231, 231);
+    border: none;
+  }
+  #formfill {
+    margin: 10px 0;
+    padding: 13px;
+    font-size: 12px;
+  }
+
+  .form h1 {
+    font-size: 14px;
+    padding-left: 25px;
+  }
+
+  .btn {
+    margin-top: 10px;
+    font-size: 12px;
+    border: 3px solid rgb(78, 81, 173);
+    padding: 10px 30px;
+  }
+  .btn:hover {
+    border: 3px solid rgb(78, 81, 173);
+    transition: 1s;
+  }
+  .categories {
+    width: 100%;
+  }
+  .post {
+    background-color: rgb(230, 39, 39);
+    width: 100%;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 10px;
+    padding: 10px 0;
+  }
+  .postcat {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 1.5rem 1rem;
+    font-size: 13px;
+    opacity: 0.6;
+  }
+
+  .about {
+    margin-top: 0.5rem;
+    line-height: 23px;
+  }
+  .aboutus h1 {
+    margin-bottom: 1.5rem;
+  }
+  .aboutus p {
+    margin-bottom: 1rem;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    margin-bottom: 3rem;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  nav .fa {
+    display: block;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+  }
+  .nav-links ul li {
+    padding: 15px;
+  }
+  .nav-links {
+    position: absolute;
+    background: orangered;
+    height: 100%;
+    width: 350px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+    position: fixed;
+  }
+  .text-box {
+    padding: 2rem;
+  }
+  .text-box h1 {
+    line-height: 50px;
+    margin-bottom: -3rem;
+    font-size: 35px;
+  }
+  #info {
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+  }
+  .love {
+    display: flex;
+    flex-direction: column;
+  }
+  .info {
+    max-width: 400px;
+  }
+
+  .infos h1 {
+    margin: 1.7rem 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .infos p {
+    font-size: 13px;
+    margin-top: 1rem;
+    line-height: 20px;
+  }
+  .form {
+    padding: 25px 22px;
+  }
+  .formfill {
+    margin: 10px 0;
+    padding: 13px;
+    font-size: 12px;
+  }
+  #formfill {
+    margin: 10px 0;
+    padding: 13px;
+    font-size: 12px;
+  }
+
+  .form h1 {
+    font-size: 14px;
+    padding-left: 25px;
+  }
+
+  .categories {
+    margin-top: -7rem;
+    width: 100%;
+  }
+  .post {
+    margin-bottom: 2rem;
+    font-size: 10px;
+    padding: 10px 0;
+  }
+  .postcat {
+    padding: 0 1.2rem 1.2rem 1.2rem;
+    font-size: 13px;
+  }
+
+  .about {
+    margin-top: 2rem;
+  }
+  .aboutus h1 {
+    margin-bottom: 1.5rem;
+  }
+  .aboutus p {
+    margin-bottom: 1rem;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .info {
+    max-width: 350px;
+  }
+}

@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+.header {
+  width: 100%;
+  max-height: 100vh;
+  min-height: 40vh;
+  padding-bottom: 100px;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 5rem;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  padding-top: 20px;
+  width: 150px;
+}
+
+.nav-links {
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: block;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: orangered;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.fa {
+  display: none;
+}
+.xtra {
+  margin: 10px;
+}
+.textletter {
+  margin-top: -1rem;
+  height: 28%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box {
+  padding-top: 20px;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+}
+.text-box h1 {
+  font-size: 45px;
+  padding-top: 4rem;
+}
+
+.info {
+  text-align: center;
+  color: #000000;
+  margin: auto;
+  padding: 20px;
+  max-width: 1100px;
+}
+.infopic {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.infos {
+  text-align: left;
+  line-height: 27px;
+}
+
+.infos h1 {
+  font-size: 40px;
+  line-height: 60px;
+}
+.infos p {
+  font-size: 17px;
+  opacity: 0.6;
+  margin-top: 1rem;
+}
+.infos .btn {
+  margin-top: 10px;
+  font-size: 15px;
+  border: 3px solid red;
+  list-style: none;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 1s;
+}
+.infos .btn:hover {
+  color: white;
+  background-color: blue;
+  border: 3px solid blue;
+  transition: 1s;
+}
+.pic img {
+  max-width: 520px;
+}
+.about {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #000000;
+  margin: auto;
+  padding: 25px;
+  max-width: 1100px;
+}
+
+.aboutus h1 {
+  margin-bottom: 2rem;
+}
+
+.aboutus p {
+  margin-bottom: 2rem;
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+.aboutus a {
+  text-decoration: none;
+  color: blue;
+  font-size: large;
+}
+
+@media (max-width: 1200px) {
+  .text-box {
+    padding: 2rem;
+  }
+  .text-box h1 {
+    line-height: 85px;
+    margin-bottom: -3rem;
+    font-size: 50px;
+  }
+  .info h1 {
+    font-size: 34px;
+  }
+  .course p {
+    font-size: 14px;
+  }
+  .programs {
+    gap: 30px;
+    margin-bottom: 2rem;
+  }
+  .pic img {
+    width: 300px;
+  }
+  .info {
+    text-align: center;
+    color: #000000;
+    margin: auto;
+    padding: 20px;
+    max-width: 1100px;
+  }
+  .infopic {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .infos {
+    text-align: left;
+    line-height: 23px;
+  }
+
+  .infos h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .infos p {
+    font-size: 13px;
+    margin-top: 1rem;
+  }
+
+  .about {
+    margin-top: 1.5rem;
+    line-height: 23px;
+  }
+  .aboutus h1 {
+    margin-bottom: 1.5rem;
+  }
+  .aboutus p {
+    margin-bottom: 1rem;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    margin-bottom: 3rem;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  nav .fa {
+    display: block;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+  }
+  .nav-links {
+    position: absolute;
+    background: rgb(53, 91, 148);
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    transition: 0.7s;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links ul {
+    margin: 1rem;
+  }
+  .nav-links ul li {
+    margin: 3rem;
+    text-align: center;
+  }
+  .text-box {
+    padding: 2rem;
+  }
+  .text-box h1 {
+    line-height: 85px;
+    margin-bottom: -3rem;
+    font-size: 35px;
+  }
+  .info h1 {
+    font-size: 24px;
+  }
+  .pic img {
+    width: 400px;
+  }
+  .info {
+    text-align: center;
+    color: #000000;
+    margin: auto;
+    padding: 20px;
+    max-width: 1100px;
+  }
+  .infopic {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .infos h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .infos p {
+    font-size: 12px;
+    margin-top: 1rem;
+  }
+
+  .about {
+    margin-top: 1.2rem;
+  }
+  .aboutus h1 {
+    margin-bottom: 1.5rem;
+  }
+  .aboutus p {
+    margin-bottom: 1rem;
+    font-size: 12px;
+  }
+}

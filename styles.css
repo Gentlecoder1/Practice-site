@@ -366,6 +366,7 @@
 }
 
 @media (max-width: 1200px) {
+
   .header {
     padding: 2% 0%;
     width: 100%;
@@ -471,6 +472,12 @@
 }
 
 @media (max-width: 600px) {
+  body {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .hero {
     overflow: hidden;
     margin-bottom: 0.7rem;
@@ -480,9 +487,9 @@
     cursor: pointer;
     z-index: 2;
   }
-
+  
   .nav {
-    position: absolute;
+    position: fixed;
     background: rgb(65, 85, 150);
     width: 50%;
     top: 0;
@@ -527,7 +534,7 @@
   }
   .course {
     margin: auto;
-    width: 350px;
+    padding: 20px;
     margin-bottom: 2rem;
   }
   .course h1 {
@@ -541,7 +548,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
-    width: 350px;
+    padding: 20px;
   }
   .under h1 {
     font-size: 20px;
@@ -551,7 +558,7 @@
   .global {
     text-align: center;
     margin: auto;
-    width: 400px;
+    padding: 30px;
   }
   .global h1 {
     font-size: 30px;
@@ -565,12 +572,11 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
-    width: 350px;
+    width: 100%;
     margin: auto;
   }
   .facilities {
     margin: auto;
-    width: 400px;
   }
   .font {
     font-size: 30px;
